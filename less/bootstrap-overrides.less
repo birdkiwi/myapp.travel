@@ -1,0 +1,27 @@
+@tooltip-bg: #3e6ea1;
+
+.tooltip {
+  .ff-gotham-pro;
+  font-size: 13px;
+}
+
+@modal-backdrop-bg: #134f8b;
+@modal-backdrop-opacity: 0.2;
+
+.form-control {
+  &:focus {
+    .box-shadow(none);
+  }
+}
+
+/* Bootstrap columns equal height Flexbox */
+@media screen and (min-width: @screen-sm-min) {
+  .equal, .equal > div[class*='col-'] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 0 auto;
+  }
+}

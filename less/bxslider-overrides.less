@@ -1,0 +1,99 @@
+// BxSlider overrides
+.bx-wrapper {
+  padding: 0;
+  .box-shadow(none);
+  border: none;
+  background: transparent;
+  margin-bottom: 20px;
+
+  .bx-controls-direction {
+    a {
+      text-indent: 0;
+      z-index: 999;
+    }
+  }
+
+  .bx-prev,
+  .bx-next {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: transparent;
+    .no-td;
+    .no-border;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      color: #cecece;
+      width: 15px;
+      height: 24px;
+      background-size: 100%;
+    }
+  }
+
+  .bx-prev {
+    left: -40px;
+
+    &:before {
+      background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2225%22%20height%3D%2240%22%20viewBox%3D%220%200%2025%2040%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.cls-1%20%7B%0A%20%20%20%20%20%20%20%20fill%3A%20%23d8dfe6%3B%0A%20%20%20%20%20%20%20%20fill-rule%3A%20evenodd%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cpath%20d%3D%22M24.993%2C35.014%20L19.993%2C40.014%20L-0.007%2C20.014%20L4.993%2C15.014%20L4.994%2C15.014%20L19.993%2C0.015%20L24.993%2C5.014%20L9.993%2C20.014%20L24.993%2C35.014%20Z%22%20class%3D%22cls-1%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+    }
+
+    &:hover {
+      &:before {
+        background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2225%22%20height%3D%2240%22%20viewBox%3D%220%200%2025%2040%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.cls-1%20%7B%0A%20%20%20%20%20%20%20%20fill%3A%20%232f6399%3B%0A%20%20%20%20%20%20%20%20fill-rule%3A%20evenodd%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cpath%20d%3D%22M24.993%2C35.014%20L19.993%2C40.014%20L-0.007%2C20.014%20L4.993%2C15.014%20L4.994%2C15.014%20L19.993%2C0.015%20L24.993%2C5.014%20L9.993%2C20.014%20L24.993%2C35.014%20Z%22%20class%3D%22cls-1%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+      }
+    }
+  }
+
+  .bx-next {
+    right: -40px;
+
+    &:before {
+      background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2225%22%20height%3D%2240%22%20viewBox%3D%220%200%2025%2040%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.cls-1%20%7B%0A%20%20%20%20%20%20%20%20fill%3A%20%23d8dfe6%3B%0A%20%20%20%20%20%20%20%20fill-rule%3A%20evenodd%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cpath%20d%3D%22M25.007%2C20.014%20L5.007%2C40.014%20L0.007%2C35.014%20L15.007%2C20.014%20L0.007%2C5.014%20L5.007%2C0.015%20L20.007%2C15.014%20L20.007%2C15.013%20L25.007%2C20.014%20Z%22%20class%3D%22cls-1%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+    }
+
+    &:hover {
+      &:before {
+        background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2225%22%20height%3D%2240%22%20viewBox%3D%220%200%2025%2040%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20.cls-1%20%7B%0A%20%20%20%20%20%20%20%20fill%3A%20%232f6399%3B%0A%20%20%20%20%20%20%20%20fill-rule%3A%20evenodd%3B%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%3C%2Fstyle%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Cpath%20d%3D%22M25.007%2C20.014%20L5.007%2C40.014%20L0.007%2C35.014%20L15.007%2C20.014%20L0.007%2C5.014%20L5.007%2C0.015%20L20.007%2C15.014%20L20.007%2C15.013%20L25.007%2C20.014%20Z%22%20class%3D%22cls-1%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+      }
+    }
+  }
+
+  .bx-pager {
+    &.bx-default-pager a {
+      position: relative;
+      background: #8b8b8b;
+      width: 8px;
+      height: 8px;
+      border-radius: 20px;
+
+
+      &.active {
+        top: -2px;
+        background: #21ced9;
+        width: 12px;
+        height: 12px;
+        margin: 0 3px;
+      }
+    }
+
+    .bx-pager-item {
+      width: 22px;
+    }
+  }
+}
+
+/* Custom query */
+@media (max-width: 1064px) {
+  .bx-wrapper {
+    .bx-prev {
+      left: 0;
+    }
+
+    .bx-next {
+      right: 0;
+    }
+  }
+}

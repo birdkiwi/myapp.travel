@@ -1,0 +1,119 @@
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="email"],
+input[type="password"] {
+  height: 45px;
+  line-height: 45px;
+  .ff-arial;
+  font-size: 15px;
+  background: #ebeff3;
+  border: none;
+  .box-shadow(none);
+  border-radius: 3px;
+  padding: 0 10px;
+
+  &:focus {
+    background: #fff2a8;
+  }
+}
+
+.form-control {
+  .ff-arial;
+  font-size: 15px;
+  background: #ebeff3;
+  border: none;
+  .box-shadow(none);
+  border-radius: 3px;
+  padding: 10px;
+
+  &:focus {
+    background: #fff2a8;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-group {
+  position: relative;
+  
+  .placeholder(#8087a1);
+
+  &:focus {
+    background: #fff2a8;
+  }
+
+  &.has-error {
+    input {
+      background: #ffd5e3;
+      color: #ee427a;
+      padding-left: 40px;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      .mt-icon-input-error;
+    }
+  }
+}
+
+.has-error {
+  .form-control {
+    .placeholder(#f64c41);
+
+    &:focus {
+      .box-shadow(none);
+    }
+  }
+}
+
+.btn-group.open .dropdown-toggle {
+  .box-shadow(none);
+  background: #FFF2A8;
+}
+
+/* Boostrap-select plugin */
+
+.bootstrap-select {
+  .btn {
+    height: 45px;
+    line-height: 45px;
+    border-radius: 3px;
+    background: #ebeff3;
+    color: #004083;
+    .ff-arial;
+  }
+
+  a {
+    .no-border;
+  }
+  
+  &:hover {
+    & > .btn {
+      background: #FFF2A8;
+      .box-shadow(none);
+    }
+  }
+
+  .dropdown-menu {
+    top: 45px;
+  }
+
+  .bs-searchbox {
+    .form-control {
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+
+  /*.dropdown-header, .dropdown-menu > li > a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }*/
+}

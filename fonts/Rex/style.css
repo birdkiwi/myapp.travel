@@ -1,0 +1,10 @@
+/* font-family: "RexBold"; */
+@font-face {
+    font-family: "RexBold";
+    src: url("../fonts/Rex/RexBold/RexBold.eot");
+    src: url("../fonts/Rex//RexBold/RexBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Rex//RexBold/RexBold.woff") format("woff"),
+    url("../fonts/Rex//RexBold/RexBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
