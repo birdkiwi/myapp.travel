@@ -25,7 +25,7 @@
             <li><a class="active" href="index.php">Старт</a></li>
             <li><a href="agencies.php">Турагентствам</a></li>
             <li><a href="operators.php">Туроператорам</a></li>
-            <li><a href="#">О проекте</a></li>
+            <li><a href="about.php">О проекте</a></li>
             <li><a href="prices.php">Цены</a></li>
         </ul>
         <div class="main-header-user">

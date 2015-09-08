@@ -24,6 +24,25 @@
   overflow-y: hidden;
 }
 
+.iphone-block-download {
+  margin-top: 30px;
+
+  a {
+    display: inline-block;
+    .no-border;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #0b0b0b;
+    padding: 13px;
+    text-align: center;
+
+    &:hover {
+      background: #ffffff;
+    }
+  }
+}
+
 .iwatch-block {
   display: inline-block;
   position: relative;
@@ -50,6 +69,12 @@
   background: url("../images/ipad-white.png") no-repeat;
   width: 325px;
   height: 460px;
+
+  .screen-xs({
+    width: 280px;
+    height: 400px;
+    background-size: 100%;
+  });
 }
 
 .ipad-block-screen {
@@ -60,6 +85,13 @@
   top: 41px;
   width: 285px;
   height: 379px;
+
+  .screen-xs({
+    left: 17px;
+    top: 35px;
+    width: 246px;
+    height: 326px;
+  });
 }
 
 .app-icons-block {
@@ -118,8 +150,7 @@
   height: 60px;
   font-size: 12px;
   text-align: center;
-  .no-td;
-  .no-border;
+  border: none;
 
   &:before {
     content: '';
@@ -141,6 +172,7 @@
 
   &.active {
     display: block;
+    border: none;
   }
 
   .screen-xs({

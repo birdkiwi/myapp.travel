@@ -337,6 +337,13 @@ h1, h2, h3, h4, h5, h6,
   .app-icons-block {
     margin-left: 27px;
     margin-bottom: 25px;
+
+    .screen-xs({
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    });
   }
 
   .screen-sm-max({
@@ -407,6 +414,12 @@ h1, h2, h3, h4, h5, h6,
     text-align: center;
     margin-bottom: 20px;
   });
+
+  .screen-xs({
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  });
 }
 
 .main-app-options {
@@ -464,6 +477,7 @@ h1, h2, h3, h4, h5, h6,
   &:hover,
   &.active {
     color: #114e8b;
+    border: none;
   }
 
   &:hover,
@@ -484,6 +498,7 @@ h1, h2, h3, h4, h5, h6,
   font-weight: bold;
   color: #004083;
   text-align: center;
+  text-transform: none;
   font-size: 50px;
   margin-bottom: 45px;
 
@@ -654,12 +669,42 @@ h1, h2, h3, h4, h5, h6,
   .ff-proxima-nova-bold;
   font-weight: bold;
   color: #004083;
+  text-transform: none;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 10px;
 
   .screen-md-max({
     font-size: 30px;
   })
+}
+
+.apps-slider-block-slide {
+  text-align: center;
+  height: 470px;
+  margin-top: 50px;
+
+  .iphone-block {
+    .transition(all 200ms);
+
+    .iphone-block-download {
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      .transition(all 200ms);
+    }
+
+    &:hover {
+      .transform(scale(1.2));
+      .transition(all 200ms);
+
+      .iphone-block-download {
+        opacity: 1;
+        z-index: 100;
+        .transition(all 200ms);
+      }
+    }
+  }
 }
 
 .static-page {
@@ -1118,8 +1163,19 @@ h1, h2, h3, h4, h5, h6,
 
   .subscribe-block {
     float: left;
+    width: 100%;
     margin-right: 40px;
     margin-bottom: 25px;
+
+    .row {
+      margin-left: -5px;
+      margin-right: -5px;
+
+      [class^="col-"] {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
   }
 
   .social-profiles-block {

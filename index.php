@@ -8,11 +8,11 @@
                 <div class="main-slider-buttons">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 text-center">
-                            <a href="#" class="btn btn-lg btn-danger main-slider-button">Турагентствам</a>
+                            <a href="agencies.php" class="btn btn-lg btn-danger main-slider-button">Турагентствам</a>
                             <div class="main-slider-button-desc">Офис / сеть</div>
                         </div>
                         <div class="col-xs-12 col-sm-6 text-center">
-                            <a href="#" class="btn btn-lg btn-info main-slider-button">Туроператорам</a>
+                            <a href="operators.php" class="btn btn-lg btn-info main-slider-button">Туроператорам</a>
                             <div class="main-slider-button-desc">B2B / B2C</div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="ipad-block" style="display: none;">
-                        <div class="ipad-block-screen">test</div>
+                        <div class="ipad-block-screen"></div>
                     </div>
                 </div>
 
@@ -176,6 +176,70 @@
 <div class="apps-slider-block">
     <div class="wrapper">
         <h1 class="apps-slider-block-title">Примеры готовых приложений</h1>
+
+        <ul class="js-bxslider" data-bx-slider-min-slides="1" data-bx-slider-max-slides="3" data-bx-slider-slide-width="300px" data-bx-slider-slide-margin="0" data-bx-slider-pager="false" data-bx-slider-controls="true">
+            <li>
+                <div class="apps-slider-block-slide">
+                    <div class="iphone-block">
+                        <div class="iphone-block-screen">
+                            <div class="iphone-block-screen-content">
+                                <img src="images/tmp/game-1.png" alt="">
+                                <div class="iphone-block-download">
+                                    <a href="#"><i class="mt-icon mt-icon-available-winstore"></i></a>
+                                    <a href="#"><i class="mt-icon mt-icon-available-googleplay"></i></a>
+                                    <a href="#"><i class="mt-icon mt-icon-available-appstore"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="apps-slider-block-slide">
+                    <div class="iphone-block">
+                        <div class="iphone-block-screen">
+                            <div class="iphone-block-screen-content">
+                                <div class="iphone-block-download">
+                                    <a href="#"><i class="mt-icon mt-icon-available-winstore"></i></a>
+                                    <a href="#"><i class="mt-icon mt-icon-available-googleplay"></i></a>
+                                    <a href="#"><i class="mt-icon mt-icon-available-appstore"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="apps-slider-block-slide">
+                    <div class="iphone-block">
+                        <div class="iphone-block-screen">
+                            <div class="iphone-block-screen-content">
+                                <div class="iphone-block-download">
+                                    <a href="#"><i class="mt-icon mt-icon-available-winstore"></i></a>
+                                    <a href="#"><i class="mt-icon mt-icon-available-googleplay"></i></a>
+                                    <a href="#"><i class="mt-icon mt-icon-available-appstore"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="apps-slider-block-slide">
+                    <div class="iphone-block">
+                        <div class="iphone-block-screen">
+                            <div class="iphone-block-screen-content">
+                                <div class="iphone-block-download">
+                                    <a href="#"><i class="mt-icon mt-icon-available-winstore"></i></a>
+                                    <a href="#"><i class="mt-icon mt-icon-available-googleplay"></i></a>
+                                    <a href="#"><i class="mt-icon mt-icon-available-appstore"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
 

@@ -11143,7 +11143,7 @@ ul.bxslider {
 }
 .bx-wrapper .bx-controls-direction a {
   text-indent: 0;
-  z-index: 999;
+  z-index: 99;
 }
 .bx-wrapper .bx-prev,
 .bx-wrapper .bx-next {
@@ -13143,7 +13143,7 @@ textarea {
   top: 15px;
   left: 15px;
   background-image: url(spritesheet.png);
-  background-position: -437px -391px;
+  background-position: -507px -102px;
   width: 16px;
   height: 14px;
 }
@@ -13493,8 +13493,70 @@ textarea {
 .app-build-modal-socials-del:hover {
   border: none;
 }
-.app-build-modal-file-upload {
-  margin-bottom: 30px;
+.app-build-modal-file-upload .form-group {
+  display: inline-block;
+}
+.app-build-modal-file-upload .form-group .form-control {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 15px;
+  font-family: GothamPro, Helvetica, sans-serif;
+  width: 120px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #b5c3ce;
+  cursor: pointer;
+}
+.app-build-modal-file-upload .form-group .form-control:hover {
+  background: #2086c2;
+  color: #fff;
+}
+.app-build-modal-file-upload .form-group .form-control input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  height: 34px;
+  opacity: 0;
+}
+.app-build-modal-upload-filename {
+  opacity: 0;
+  display: inline-block;
+  font-size: 15px;
+  font-family: GothamPro, Helvetica, sans-serif;
+  color: #b5c3ce;
+  font-weight: 500;
+  text-transform: uppercase;
+  -moz-transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+.app-build-modal-upload-filename.active {
+  opacity: 1;
+  -moz-transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+@media (max-width: 767px) {
+  .app-build-modal-upload-filename.active {
+    margin-top: 10px;
+  }
+}
+.app-build-modal-upload-filename a {
+  display: inline-block;
+  margin-left: 5px;
+  border: none;
+}
+.app-build-modal-upload-filename a:hover {
+  border: none;
 }
 .app-build-modal-offices h5 {
   color: #b5c3ce;
@@ -13506,6 +13568,71 @@ textarea {
 }
 .app-build-modal-offices h5 a:hover {
   border: none;
+}
+.app-build-modal-menutype {
+  margin-bottom: 20px;
+}
+.app-build-modal-menutype a {
+  display: inline-block;
+  background: #ecf0f4;
+  color: #b5c3ce;
+  text-transform: uppercase;
+  font-family: GothamPro, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 18px;
+  border: none;
+}
+.app-build-modal-menutype a:hover {
+  border: none;
+}
+.app-build-modal-menutype a:last-child {
+  margin-right: 0;
+}
+.app-build-modal-menutype a:hover,
+.app-build-modal-menutype a.active {
+  background: #2086c2;
+  color: #fff;
+}
+.app-build-modal-menutype h5 {
+  color: #b5c3ce;
+  font-size: 15px;
+}
+.app-build-modal-color h5 {
+  color: #b5c3ce;
+  font-size: 15px;
+}
+.app-build-modal-color-item {
+  margin-bottom: 15px;
+  font-family: GothamPro, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #b5c3ce;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+.app-build-modal-color-item.active {
+  color: #2086c2;
+}
+.app-build-modal-color-item input {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 10px;
+  color: transparent !important;
+}
+.app-build-modal-colorpicker {
+  margin-left: 20px;
+}
+@media (max-width: 767px) {
+  .app-build-modal-colorpicker {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }
 .iphone-block {
   display: inline-block;
@@ -13529,6 +13656,25 @@ textarea {
   min-height: 325px;
   height: 100%;
   overflow-y: hidden;
+}
+.iphone-block-download {
+  margin-top: 30px;
+}
+.iphone-block-download a {
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #0b0b0b;
+  padding: 13px;
+  text-align: center;
+}
+.iphone-block-download a:hover {
+  border: none;
+}
+.iphone-block-download a:hover {
+  background: #ffffff;
 }
 .iwatch-block {
   display: inline-block;
@@ -13555,6 +13701,13 @@ textarea {
   width: 325px;
   height: 460px;
 }
+@media (max-width: 767px) {
+  .ipad-block {
+    width: 280px;
+    height: 400px;
+    background-size: 100%;
+  }
+}
 .ipad-block-screen {
   position: relative;
   background: #000;
@@ -13563,6 +13716,14 @@ textarea {
   top: 41px;
   width: 285px;
   height: 379px;
+}
+@media (max-width: 767px) {
+  .ipad-block-screen {
+    left: 17px;
+    top: 35px;
+    width: 246px;
+    height: 326px;
+  }
 }
 .app-icons-block {
   display: inline-block;
@@ -13612,15 +13773,6 @@ textarea {
   height: 60px;
   font-size: 12px;
   text-align: center;
-  text-decoration: none;
-  border: none;
-}
-.to-top-scroll:hover,
-.to-top-scroll:focus,
-.to-top-scroll:active {
-  text-decoration: none;
-}
-.to-top-scroll:hover {
   border: none;
 }
 .to-top-scroll:before {
@@ -13639,6 +13791,7 @@ textarea {
 }
 .to-top-scroll.active {
   display: block;
+  border: none;
 }
 @media (max-width: 767px) {
   .to-top-scroll.active {
@@ -13767,295 +13920,331 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .mt-icon-about-hover {
   background-image: url(spritesheet.png);
-  background-position: -364px -50px;
+  background-position: -264px -368px;
   width: 50px;
   height: 50px;
 }
 .mt-icon-about {
   background-image: url(spritesheet.png);
-  background-position: -364px -250px;
+  background-position: -314px -368px;
   width: 50px;
   height: 50px;
 }
 .mt-icon-advantage-money {
   background-image: url(spritesheet.png);
-  background-position: -200px -100px;
+  background-position: 0px -200px;
   width: 100px;
   height: 100px;
 }
 .mt-icon-advantage-rabbit {
   background-image: url(spritesheet.png);
-  background-position: -100px 0px;
+  background-position: 0px -100px;
   width: 100px;
   height: 100px;
 }
 .mt-icon-advantage-thumb-up {
   background-image: url(spritesheet.png);
-  background-position: 0px -100px;
+  background-position: -100px -100px;
   width: 100px;
   height: 100px;
 }
 .mt-icon-android {
   background-image: url(spritesheet.png);
-  background-position: -440px -339px;
+  background-position: -485px -102px;
   width: 22px;
   height: 26px;
 }
 .mt-icon-apple {
   background-image: url(spritesheet.png);
-  background-position: -440px -365px;
+  background-position: -485px -128px;
   width: 22px;
   height: 26px;
 }
 .mt-icon-automatic {
   background-image: url(spritesheet.png);
-  background-position: -350px -364px;
+  background-position: -64px -368px;
   width: 50px;
   height: 50px;
 }
-.mt-icon-broadcasting-white {
-  background-image: url(spritesheet.png);
-  background-position: -200px 0px;
-  width: 100px;
-  height: 100px;
-}
-.mt-icon-build-agency-hover {
-  background-image: url(spritesheet.png);
-  background-position: -64px -300px;
-  width: 64px;
-  height: 64px;
-}
-.mt-icon-build-agency {
-  background-image: url(spritesheet.png);
-  background-position: -128px -300px;
-  width: 64px;
-  height: 64px;
-}
-.mt-icon-build-business-hover {
-  background-image: url(spritesheet.png);
-  background-position: -200px -200px;
-  width: 64px;
-  height: 64px;
-}
-.mt-icon-build-business {
+.mt-icon-available-appstore-hover {
   background-image: url(spritesheet.png);
   background-position: -300px 0px;
-  width: 64px;
-  height: 64px;
+  width: 135px;
+  height: 38px;
 }
-.mt-icon-build-clients-hover {
+.mt-icon-available-appstore {
   background-image: url(spritesheet.png);
-  background-position: -300px -64px;
-  width: 64px;
-  height: 64px;
+  background-position: -300px -38px;
+  width: 135px;
+  height: 38px;
 }
-.mt-icon-build-clients {
+.mt-icon-available-googleplay-hover {
   background-image: url(spritesheet.png);
-  background-position: -300px -128px;
-  width: 64px;
-  height: 64px;
+  background-position: -140px -300px;
+  width: 140px;
+  height: 35px;
 }
-.mt-icon-build-operator-hover {
-  background-image: url(spritesheet.png);
-  background-position: -300px -192px;
-  width: 64px;
-  height: 64px;
-}
-.mt-icon-build-operator {
+.mt-icon-available-googleplay {
   background-image: url(spritesheet.png);
   background-position: 0px -300px;
-  width: 64px;
-  height: 64px;
+  width: 140px;
+  height: 35px;
 }
-.mt-icon-building {
+.mt-icon-available-winstore-hover {
   background-image: url(spritesheet.png);
-  background-position: -414px -289px;
-  width: 38px;
-  height: 50px;
+  background-position: 0px -335px;
+  width: 139px;
+  height: 33px;
 }
-.mt-icon-cart-hover {
+.mt-icon-available-winstore {
   background-image: url(spritesheet.png);
-  background-position: -292px -300px;
-  width: 50px;
-  height: 50px;
+  background-position: -280px -300px;
+  width: 139px;
+  height: 33px;
 }
-.mt-icon-cart {
-  background-image: url(spritesheet.png);
-  background-position: -364px 0px;
-  width: 50px;
-  height: 50px;
-}
-.mt-icon-check-green {
-  background-image: url(spritesheet.png);
-  background-position: -414px -365px;
-  width: 26px;
-  height: 26px;
-}
-.mt-icon-check-white {
-  background-image: url(spritesheet.png);
-  background-position: -100px -200px;
-  width: 100px;
-  height: 100px;
-}
-.mt-icon-client-hover {
-  background-image: url(spritesheet.png);
-  background-position: -364px -150px;
-  width: 50px;
-  height: 50px;
-}
-.mt-icon-client {
-  background-image: url(spritesheet.png);
-  background-position: -364px -200px;
-  width: 50px;
-  height: 50px;
-}
-.mt-icon-collect {
-  background-image: url(spritesheet.png);
-  background-position: -192px -300px;
-  width: 50px;
-  height: 50px;
-}
-.mt-icon-facebook {
-  background-image: url(spritesheet.png);
-  background-position: -414px -97px;
-  width: 48px;
-  height: 48px;
-}
-.mt-icon-flame-hover {
-  background-image: url(spritesheet.png);
-  background-position: 0px -364px;
-  width: 50px;
-  height: 50px;
-}
-.mt-icon-flame {
-  background-image: url(spritesheet.png);
-  background-position: -50px -364px;
-  width: 50px;
-  height: 50px;
-}
-.mt-icon-googleplus {
-  background-image: url(spritesheet.png);
-  background-position: -414px -241px;
-  width: 48px;
-  height: 48px;
-}
-.mt-icon-input-error {
-  background-image: url(spritesheet.png);
-  background-position: -437px -391px;
-  width: 16px;
-  height: 14px;
-}
-.mt-icon-map-hover {
-  background-image: url(spritesheet.png);
-  background-position: -200px -364px;
-  width: 50px;
-  height: 50px;
-}
-.mt-icon-map {
-  background-image: url(spritesheet.png);
-  background-position: -250px -364px;
-  width: 50px;
-  height: 50px;
-}
-.mt-icon-measure-hover {
-  background-image: url(spritesheet.png);
-  background-position: -300px -364px;
-  width: 50px;
-  height: 50px;
-}
-.mt-icon-measure-white {
+.mt-icon-broadcasting-white {
   background-image: url(spritesheet.png);
   background-position: 0px 0px;
   width: 100px;
   height: 100px;
 }
+.mt-icon-build-agency-hover {
+  background-image: url(spritesheet.png);
+  background-position: -300px -76px;
+  width: 64px;
+  height: 64px;
+}
+.mt-icon-build-agency {
+  background-image: url(spritesheet.png);
+  background-position: -364px -76px;
+  width: 64px;
+  height: 64px;
+}
+.mt-icon-build-business-hover {
+  background-image: url(spritesheet.png);
+  background-position: 0px -368px;
+  width: 64px;
+  height: 64px;
+}
+.mt-icon-build-business {
+  background-image: url(spritesheet.png);
+  background-position: -300px -140px;
+  width: 64px;
+  height: 64px;
+}
+.mt-icon-build-clients-hover {
+  background-image: url(spritesheet.png);
+  background-position: -364px -140px;
+  width: 64px;
+  height: 64px;
+}
+.mt-icon-build-clients {
+  background-image: url(spritesheet.png);
+  background-position: -300px -204px;
+  width: 64px;
+  height: 64px;
+}
+.mt-icon-build-operator-hover {
+  background-image: url(spritesheet.png);
+  background-position: -364px -204px;
+  width: 64px;
+  height: 64px;
+}
+.mt-icon-build-operator {
+  background-image: url(spritesheet.png);
+  background-position: -200px -200px;
+  width: 64px;
+  height: 64px;
+}
+.mt-icon-building {
+  background-image: url(spritesheet.png);
+  background-position: -485px 0px;
+  width: 38px;
+  height: 50px;
+}
+.mt-icon-cart-hover {
+  background-image: url(spritesheet.png);
+  background-position: -164px -368px;
+  width: 50px;
+  height: 50px;
+}
+.mt-icon-cart {
+  background-image: url(spritesheet.png);
+  background-position: -214px -368px;
+  width: 50px;
+  height: 50px;
+}
+.mt-icon-check-green {
+  background-image: url(spritesheet.png);
+  background-position: -485px -76px;
+  width: 26px;
+  height: 26px;
+}
+.mt-icon-check-white {
+  background-image: url(spritesheet.png);
+  background-position: -100px 0px;
+  width: 100px;
+  height: 100px;
+}
+.mt-icon-client-hover {
+  background-image: url(spritesheet.png);
+  background-position: -364px -368px;
+  width: 50px;
+  height: 50px;
+}
+.mt-icon-client {
+  background-image: url(spritesheet.png);
+  background-position: -435px 0px;
+  width: 50px;
+  height: 50px;
+}
+.mt-icon-collect {
+  background-image: url(spritesheet.png);
+  background-position: -435px -50px;
+  width: 50px;
+  height: 50px;
+}
+.mt-icon-facebook {
+  background-image: url(spritesheet.png);
+  background-position: -248px -432px;
+  width: 48px;
+  height: 48px;
+}
+.mt-icon-flame-hover {
+  background-image: url(spritesheet.png);
+  background-position: -435px -150px;
+  width: 50px;
+  height: 50px;
+}
+.mt-icon-flame {
+  background-image: url(spritesheet.png);
+  background-position: -435px -200px;
+  width: 50px;
+  height: 50px;
+}
+.mt-icon-googleplus {
+  background-image: url(spritesheet.png);
+  background-position: -392px -432px;
+  width: 48px;
+  height: 48px;
+}
+.mt-icon-input-error {
+  background-image: url(spritesheet.png);
+  background-position: -507px -102px;
+  width: 16px;
+  height: 14px;
+}
+.mt-icon-map-hover {
+  background-image: url(spritesheet.png);
+  background-position: -435px -350px;
+  width: 50px;
+  height: 50px;
+}
+.mt-icon-map {
+  background-image: url(spritesheet.png);
+  background-position: 0px -432px;
+  width: 50px;
+  height: 50px;
+}
+.mt-icon-measure-hover {
+  background-image: url(spritesheet.png);
+  background-position: -50px -432px;
+  width: 50px;
+  height: 50px;
+}
+.mt-icon-measure-white {
+  background-image: url(spritesheet.png);
+  background-position: -100px -200px;
+  width: 100px;
+  height: 100px;
+}
 .mt-icon-measure {
   background-image: url(spritesheet.png);
-  background-position: -150px -364px;
+  background-position: -435px -300px;
   width: 50px;
   height: 50px;
 }
 .mt-icon-odnoklassniki {
   background-image: url(spritesheet.png);
-  background-position: -414px -193px;
+  background-position: -344px -432px;
   width: 48px;
   height: 48px;
 }
 .mt-icon-search-hover {
   background-image: url(spritesheet.png);
-  background-position: -100px -364px;
+  background-position: -435px -250px;
   width: 50px;
   height: 50px;
 }
 .mt-icon-search {
   background-image: url(spritesheet.png);
-  background-position: -364px -300px;
+  background-position: -435px -100px;
   width: 50px;
   height: 50px;
 }
 .mt-icon-settings-white {
   background-image: url(spritesheet.png);
-  background-position: 0px -200px;
+  background-position: -200px -100px;
   width: 100px;
   height: 100px;
 }
 .mt-icon-shop-hover {
   background-image: url(spritesheet.png);
-  background-position: -242px -300px;
+  background-position: -114px -368px;
   width: 50px;
   height: 50px;
 }
 .mt-icon-shop {
   background-image: url(spritesheet.png);
-  background-position: -364px -100px;
+  background-position: -100px -432px;
   width: 50px;
   height: 50px;
 }
 .mt-icon-smatphone-tablet {
   background-image: url(spritesheet.png);
-  background-position: -414px 0px;
+  background-position: -150px -432px;
   width: 50px;
   height: 49px;
 }
 .mt-icon-tablet {
   background-image: url(spritesheet.png);
-  background-position: -414px -339px;
+  background-position: -485px -50px;
   width: 26px;
   height: 26px;
 }
 .mt-icon-text-white {
   background-image: url(spritesheet.png);
-  background-position: -100px -100px;
+  background-position: -200px 0px;
   width: 100px;
   height: 100px;
 }
 .mt-icon-trash-hover {
   background-image: url(spritesheet.png);
-  background-position: -452px -304px;
+  background-position: -511px -76px;
   width: 12px;
   height: 15px;
 }
 .mt-icon-trash {
   background-image: url(spritesheet.png);
-  background-position: -452px -289px;
+  background-position: -511px -50px;
   width: 12px;
   height: 15px;
 }
 .mt-icon-twitter {
   background-image: url(spritesheet.png);
-  background-position: -414px -49px;
+  background-position: -200px -432px;
   width: 48px;
   height: 48px;
 }
 .mt-icon-vk {
   background-image: url(spritesheet.png);
-  background-position: -414px -145px;
+  background-position: -296px -432px;
   width: 48px;
   height: 48px;
 }
 .mt-icon-windows {
   background-image: url(spritesheet.png);
-  background-position: -414px -391px;
+  background-position: -485px -154px;
   width: 23px;
   height: 23px;
 }
@@ -14065,105 +14254,105 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .main-app-options-item-shop:before {
   background-image: url(spritesheet.png);
-  background-position: -364px -100px;
+  background-position: -100px -432px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-shop:hover:before,
 .main-app-options-item-shop.active:before {
   background-image: url(spritesheet.png);
-  background-position: -242px -300px;
+  background-position: -114px -368px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-flame:before {
   background-image: url(spritesheet.png);
-  background-position: -50px -364px;
+  background-position: -435px -200px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-flame:hover:before,
 .main-app-options-item-flame.active:before {
   background-image: url(spritesheet.png);
-  background-position: 0px -364px;
+  background-position: -435px -150px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-search:before {
   background-image: url(spritesheet.png);
-  background-position: -364px -300px;
+  background-position: -435px -100px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-search:hover:before,
 .main-app-options-item-search.active:before {
   background-image: url(spritesheet.png);
-  background-position: -100px -364px;
+  background-position: -435px -250px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-about:before {
   background-image: url(spritesheet.png);
-  background-position: -364px -250px;
+  background-position: -314px -368px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-about:hover:before,
 .main-app-options-item-about.active:before {
   background-image: url(spritesheet.png);
-  background-position: -364px -50px;
+  background-position: -264px -368px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-map:before {
   background-image: url(spritesheet.png);
-  background-position: -250px -364px;
+  background-position: 0px -432px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-map:hover:before,
 .main-app-options-item-map.active:before {
   background-image: url(spritesheet.png);
-  background-position: -200px -364px;
+  background-position: -435px -350px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-measure:before {
   background-image: url(spritesheet.png);
-  background-position: -150px -364px;
+  background-position: -435px -300px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-measure:hover:before,
 .main-app-options-item-measure.active:before {
   background-image: url(spritesheet.png);
-  background-position: -300px -364px;
+  background-position: -50px -432px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-cart:before {
   background-image: url(spritesheet.png);
-  background-position: -364px 0px;
+  background-position: -214px -368px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-cart:hover:before,
 .main-app-options-item-cart.active:before {
   background-image: url(spritesheet.png);
-  background-position: -292px -300px;
+  background-position: -164px -368px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-client:before {
   background-image: url(spritesheet.png);
-  background-position: -364px -200px;
+  background-position: -435px 0px;
   width: 50px;
   height: 50px;
 }
 .main-app-options-item-client:hover:before,
 .main-app-options-item-client.active:before {
   background-image: url(spritesheet.png);
-  background-position: -364px -150px;
+  background-position: -364px -368px;
   width: 50px;
   height: 50px;
 }
@@ -14172,7 +14361,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .custom-radio-block.active .mt-icon-build-agency,
 .custom-checkbox-block.active .mt-icon-build-agency {
   background-image: url(spritesheet.png);
-  background-position: -64px -300px;
+  background-position: -300px -76px;
   width: 64px;
   height: 64px;
 }
@@ -14181,7 +14370,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .custom-radio-block.active .mt-icon-build-operator,
 .custom-checkbox-block.active .mt-icon-build-operator {
   background-image: url(spritesheet.png);
-  background-position: -300px -192px;
+  background-position: -364px -204px;
   width: 64px;
   height: 64px;
 }
@@ -14190,7 +14379,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .custom-radio-block.active .mt-icon-build-business,
 .custom-checkbox-block.active .mt-icon-build-business {
   background-image: url(spritesheet.png);
-  background-position: -200px -200px;
+  background-position: 0px -368px;
   width: 64px;
   height: 64px;
 }
@@ -14199,7 +14388,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .custom-radio-block.active .mt-icon-build-clients,
 .custom-checkbox-block.active .mt-icon-build-clients {
   background-image: url(spritesheet.png);
-  background-position: -300px -64px;
+  background-position: -364px -140px;
   width: 64px;
   height: 64px;
 }
@@ -14208,7 +14397,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .custom-radio-block.active .mt-icon-shop,
 .custom-checkbox-block.active .mt-icon-shop {
   background-image: url(spritesheet.png);
-  background-position: -242px -300px;
+  background-position: -114px -368px;
   width: 50px;
   height: 50px;
 }
@@ -14217,7 +14406,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .custom-radio-block.active .mt-icon-flame,
 .custom-checkbox-block.active .mt-icon-flame {
   background-image: url(spritesheet.png);
-  background-position: 0px -364px;
+  background-position: -435px -150px;
   width: 50px;
   height: 50px;
 }
@@ -14226,7 +14415,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .custom-radio-block.active .mt-icon-search,
 .custom-checkbox-block.active .mt-icon-search {
   background-image: url(spritesheet.png);
-  background-position: -100px -364px;
+  background-position: -435px -250px;
   width: 50px;
   height: 50px;
 }
@@ -14235,7 +14424,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .custom-radio-block.active .mt-icon-about,
 .custom-checkbox-block.active .mt-icon-about {
   background-image: url(spritesheet.png);
-  background-position: -364px -50px;
+  background-position: -264px -368px;
   width: 50px;
   height: 50px;
 }
@@ -14244,7 +14433,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .custom-radio-block.active .mt-icon-cart,
 .custom-checkbox-block.active .mt-icon-cart {
   background-image: url(spritesheet.png);
-  background-position: -292px -300px;
+  background-position: -164px -368px;
   width: 50px;
   height: 50px;
 }
@@ -14253,7 +14442,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .custom-radio-block.active .mt-icon-client,
 .custom-checkbox-block.active .mt-icon-client {
   background-image: url(spritesheet.png);
-  background-position: -364px -150px;
+  background-position: -364px -368px;
   width: 50px;
   height: 50px;
 }
@@ -14262,7 +14451,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 .custom-radio-block.active .mt-icon-map,
 .custom-checkbox-block.active .mt-icon-map {
   background-image: url(spritesheet.png);
-  background-position: -200px -364px;
+  background-position: -435px -350px;
   width: 50px;
   height: 50px;
 }
@@ -14271,15 +14460,33 @@ Icon classes can be used entirely standalone. They are named after their origina
 .custom-radio-block.active .mt-icon-measure,
 .custom-checkbox-block.active .mt-icon-measure {
   background-image: url(spritesheet.png);
-  background-position: -300px -364px;
+  background-position: -50px -432px;
   width: 50px;
   height: 50px;
 }
 a:hover > .mt-icon-trash {
   background-image: url(spritesheet.png);
-  background-position: -452px -304px;
+  background-position: -511px -76px;
   width: 12px;
   height: 15px;
+}
+a:hover > .mt-icon-available-appstore {
+  background-image: url(spritesheet.png);
+  background-position: -300px 0px;
+  width: 135px;
+  height: 38px;
+}
+a:hover > .mt-icon-available-winstore {
+  background-image: url(spritesheet.png);
+  background-position: 0px -335px;
+  width: 139px;
+  height: 33px;
+}
+a:hover > .mt-icon-available-googleplay {
+  background-image: url(spritesheet.png);
+  background-position: -140px -300px;
+  width: 140px;
+  height: 35px;
 }
 .icon-social {
   display: inline-block;
@@ -14704,6 +14911,14 @@ h6,
   margin-left: 27px;
   margin-bottom: 25px;
 }
+@media (max-width: 767px) {
+  .main-slider .app-icons-block {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
 @media (max-width: 991px) {
   .main-slider {
     padding-top: 70px;
@@ -14769,6 +14984,13 @@ h6,
     margin-bottom: 20px;
   }
 }
+@media (max-width: 767px) {
+  .main-slider-devices {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .main-app-options {
   position: relative;
   background: #fff;
@@ -14821,6 +15043,7 @@ h6,
 .main-app-options-item:hover,
 .main-app-options-item.active {
   color: #114e8b;
+  border: none;
 }
 .main-app-options-item:hover,
 .main-app-options-item:focus,
@@ -14837,6 +15060,7 @@ h6,
   font-weight: bold;
   color: #004083;
   text-align: center;
+  text-transform: none;
   font-size: 50px;
   margin-bottom: 45px;
 }
@@ -15014,13 +15238,54 @@ h6,
   font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #004083;
+  text-transform: none;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 @media (max-width: 1199px) {
   .apps-slider-block-title {
     font-size: 30px;
   }
+}
+.apps-slider-block-slide {
+  text-align: center;
+  height: 470px;
+  margin-top: 50px;
+}
+.apps-slider-block-slide .iphone-block {
+  -moz-transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+.apps-slider-block-slide .iphone-block .iphone-block-download {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  -moz-transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+.apps-slider-block-slide .iphone-block:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -moz-transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
+}
+.apps-slider-block-slide .iphone-block:hover .iphone-block-download {
+  opacity: 1;
+  z-index: 100;
+  -moz-transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -o-transition: all 200ms;
+  transition: all 200ms;
 }
 .static-page {
   margin-bottom: 40px;
@@ -15434,8 +15699,17 @@ h6,
 }
 .main-footer .subscribe-block {
   float: left;
+  width: 100%;
   margin-right: 40px;
   margin-bottom: 25px;
+}
+.main-footer .subscribe-block .row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.main-footer .subscribe-block .row [class^="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .main-footer .social-profiles-block {
   float: right;

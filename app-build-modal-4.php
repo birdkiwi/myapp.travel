@@ -29,7 +29,15 @@
                     <h4>Логотип</h4>
 
                     <div class="form-group">
-                        <input type="file" class="form-control">
+                        <div class="form-control">
+                            загрузить
+                            <input type="file" name="logo" autocomplete="off" data-js-filename="#logo-file">
+                        </div>
+
+                        <div id="logo-file" class="app-build-modal-upload-filename">
+                            <span></span>
+                            <a href="#" class="app-build-modal-upload-del" data-js-filename-del="input[name='logo']"><i class="mt-icon mt-icon-trash"></i></a>
+                        </div>
                     </div>
                 </div>
 

@@ -296,7 +296,67 @@
 }
 
 .app-build-modal-file-upload {
-  margin-bottom: 30px;
+  .form-group {
+    display: inline-block;
+
+    .form-control {
+      display: inline-block;
+      margin-right: 20px;
+      position: relative;
+      height: 34px;
+      line-height: 34px;
+      padding: 0 15px;
+      .ff-gotham-pro;
+      width: 120px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      color: #b5c3ce;
+      cursor: pointer;
+
+      &:hover {
+        background: #2086c2;
+        color: #fff;
+      }
+
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: block;
+        width: 100%;
+        height: 34px;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.app-build-modal-upload-filename {
+  opacity: 0;
+  display: inline-block;
+  font-size: 15px;
+  .ff-gotham-pro;
+  color: #b5c3ce;
+  font-weight: 500;
+  text-transform: uppercase;
+  .transition(all 200ms);
+
+  &.active {
+    opacity: 1;
+    .transition(all 200ms);
+
+    .screen-xs({
+      margin-top: 10px;
+    })
+  }
+
+  a {
+    display: inline-block;
+    margin-left: 5px;
+    .no-border;
+  }
 }
 
 .app-build-modal-offices {
@@ -309,4 +369,77 @@
       .no-border;
     }
   }
+}
+
+.app-build-modal-menutype {
+  margin-bottom: 20px;
+
+  a {
+    display: inline-block;
+    background: #ecf0f4;
+    color: #b5c3ce;
+    text-transform: uppercase;
+    .ff-gotham-pro;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 18px;
+    .no-border;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover,
+    &.active {
+      background: #2086c2;
+      color: #fff;
+    }
+  }
+
+  h5 {
+    color: #b5c3ce;
+    font-size: 15px;
+  }
+}
+
+.app-build-modal-color {
+  h5 {
+    color: #b5c3ce;
+    font-size: 15px;
+  }
+}
+
+.app-build-modal-color-item {
+  margin-bottom: 15px;
+  .ff-gotham-pro;
+  font-size: 15px;
+  color: #b5c3ce;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+
+  &.active {
+    color: #2086c2;
+  }
+
+  input {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    color: transparent !important;
+  }
+}
+
+.app-build-modal-colorpicker {
+  margin-left: 20px;
+
+  .screen-xs({
+    margin-left: 0;
+    margin-bottom: 20px;
+  })
 }
