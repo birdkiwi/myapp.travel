@@ -2,7 +2,7 @@
 
 <article class="static-page">
     <div class="wrapper">
-        <h1 class="page-title">Турагентствам</h1>
+        <h1 class="page-title">Туроператорам</h1>
     </div>
 
     <div class="static-page-block static-page-block-gray">
@@ -125,7 +125,7 @@
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-        <?php include('work-scheme-agencies.php'); ?>
+        <?php include('work-scheme-operators.php'); ?>
 
         <div class="partners-app-block">
             <ul class="js-bxslider" data-bx-slider-min-slides="2" data-bx-slider-max-slides="6" data-bx-slider-slide-width="150" data-bx-slider-slide-margin="15" data-bx-slider-pager="false" data-bx-slider-controls="true">

@@ -97,8 +97,20 @@
         </div>
     </div>
 
-    <div class="text-center">
-        <a href="#app-build-modal-1" class="btn btn-info btn-lg" style="width: 250px;" data-toggle="modal" data-backdrop="static" data-keyboard="false">Заказать</a>
+    <br>
+
+    <div class="wrapper">
+        <h2 class="static-page-block-title text-center">B2C &mdash; для туроператоров / турагентов</h2>
+
+        <?php include('work-scheme-agencies.php'); ?>
+
+        <h2 class="static-page-block-title text-center">B2B &mdash; для поставщиков тур услуг</h2>
+
+        <?php include('work-scheme-operators.php'); ?>
+
+        <div class="text-center">
+            <a href="#app-build-modal-1" class="btn btn-info btn-lg" style="width: 250px;" data-toggle="modal" data-backdrop="static" data-keyboard="false">Заказать</a>
+        </div>
     </div>
 </article>
 
