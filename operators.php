@@ -99,17 +99,17 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-5 text-center">
-                    <div class="iphone-block">
+                    <div class="iphone-block iphone-block-md">
                         <div class="iphone-block-screen">
                             <div class="iphone-block-screen-content js-custom-scroll" data-mcs-theme="minimal-dark">
-                                <img src="images/screens/ios-app-tour-select.jpg" class="iphone-block-screenshot active" width="200" alt="" data-function-screen="shop">
-                                <img src="images/screens/ios-app-hot-tours-light.jpg" class="iphone-block-screenshot" width="200" alt="" data-function-screen="hot">
-                                <img src="images/screens/ios-app-hotel-choise-all.jpg" class="iphone-block-screenshot" width="200" alt="" data-function-screen="search">
-                                <img src="images/screens/ios-app-hotel-choise-all.jpg" class="iphone-block-screenshot" width="200" alt="" data-function-screen="about">
-                                <img src="images/screens/ios-app-hotel-choise-all.jpg" class="iphone-block-screenshot" width="200" alt="" data-function-screen="map">
-                                <img src="images/screens/ios-app-menu.jpg" class="iphone-block-screenshot" width="200" alt="" data-function-screen="design">
-                                <img src="images/screens/ios-app-tour-order.jpg" class="iphone-block-screenshot" width="200" alt="" data-function-screen="cart">
-                                <img src="images/screens/ios-app-tour-order.jpg" class="iphone-block-screenshot" width="200" alt="" data-function-screen="client">
+                                <img src="images/screens/ios-app-tour-select.jpg" class="iphone-block-screenshot active" width="280" alt="" data-function-screen="shop">
+                                <img src="images/screens/ios-app-hot-tours-light.jpg" class="iphone-block-screenshot" width="280" alt="" data-function-screen="hot" style="display: none">
+                                <img src="images/screens/ios-app-hotel-choise-all.jpg" class="iphone-block-screenshot" width="280" alt="" data-function-screen="search" style="display: none">
+                                <img src="images/screens/ios-app-hotel-choise-all.jpg" class="iphone-block-screenshot" width="280" alt="" data-function-screen="about" style="display: none">
+                                <img src="images/screens/ios-app-hotel-choise-all.jpg" class="iphone-block-screenshot" width="280" alt="" data-function-screen="map" style="display: none">
+                                <img src="images/screens/ios-app-menu.jpg" class="iphone-block-screenshot" width="280" alt="" data-function-screen="design" style="display: none">
+                                <img src="images/screens/ios-app-tour-order.jpg" class="iphone-block-screenshot" width="280" alt="" data-function-screen="cart" style="display: none">
+                                <img src="images/screens/ios-app-tour-order.jpg" class="iphone-block-screenshot" width="280" alt="" data-function-screen="client" style="display: none">
                             </div>
                         </div>
                     </div>
